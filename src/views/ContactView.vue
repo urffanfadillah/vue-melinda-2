@@ -1,50 +1,21 @@
 <script>
     import FooterContent from "@/components/utils/FooterContent.vue"
-    import HeroContent from "@/components/utils/HeroContent.vue"
-    import HeadingContent from "@/components/utils/HeadingContent.vue"
+    import HeroText from "@/components/utils/HeroText.vue"
     export default {
         components: {
-            FooterContent, HeroContent, HeadingContent
+            FooterContent, HeroText
         }
     }
 </script>
 <template>
-    <!-- hero -->    
-    <!-- <HeroContent noBackground>
-        <div class="col-md-4" id="konten-hero">
-            <HeadingContent 
-                subTitle="Melinda Hospital"
-                title="Get In Touch With Us"
-                paragraph="Health is the main key to a woman's beauty and happiness. Melinda Hospital is sincerely committed to realizing every woman's dream to look beautiful, healthy and happy."
-            />        
-        </div>
-        <template #imagesSlot>
-            <img src="@/assets/images/hero-contact-1.png" class="d-none d-md-block d-lg-none img-fluid" alt="heroimages" loading="lazy" id="hero-image"/>
-        </template>
-    </HeroContent> -->
-    <HeroContent noBackground>
-        <div class="col-md-4" id="konten-hero">
-            <HeadingContent
-                subTitle="Melinda Hospital"
-                title="Get In Touch With Us"
-                paragraph="Health is the main key to a woman's beauty and happiness. Melinda Hospital is sincerely committed to realizing every woman's dream to look beautiful, healthy and happy."
-                text_dark
-                blue_title                
-            />     
-        </div>
-        <template #imagesSlot>
-            <img src="@/assets/images/hero-contact-1.png" class="d-none d-lg-block img-fluid" alt="heroimages" loading="lazy" id="hero-images-homepage">    
-        </template>        
-        <div class="col-md-8" id="konten-img">
-            <img src="@/assets/images/hero-contact-1.png" class="d-none d-md-block d-lg-none img-fluid" alt="heroimages" loading="lazy" id="hero-image"/>
-        </div>        
-    </HeroContent>
-    <!-- konten img yang versi desktop -->
-    <div class="wrapper-hero-img">        
-        <img src="@/assets/images/hero-contact-1.png" class="d-none d-lg-block img-fluid" alt="heroimages" loading="lazy" id="hero-images-homepage">
-    </div>
+    <HeroText 
+        subTitle="Melinda Hospital 2"
+        title="Contact Us"
+        content="Various health facilities with state-of-the-art medical equipment and the latest. Making the quality of hospital services the best, safe, comfortable, friendly, effective, and efficient."
+        blueTheme
+    />
     <!-- content -->
-    <section class="container-fluid konten background-cream row mt-5" style="padding-top: 120px; padding-bottom: 120px;">
+    <section class="container-fluid konten row" style="padding-top: 120px; padding-bottom: 120px;">
         <div class="col-sm-6">
             <span class="content-sub-title mb-1">Melinda Hospital Mother Care</span>
             <h1 class="content-title fw-bold mb-2">Tell us what do you need?</h1>

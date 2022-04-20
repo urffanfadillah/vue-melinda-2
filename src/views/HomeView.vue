@@ -3,9 +3,11 @@
   import HeadingContent from "@/components/utils/HeadingContent.vue"
   import ContentImages from "@/components/utils/ContentImages.vue"
   import CarouselComps from "@/components/home/CarouselComps.vue"
+  import ArticlesComps from "@/components/home/ArticlesComps.vue"
+  import FooterContent from "@/components/utils/FooterContent.vue"
   export default {
     name: 'HomeView',
-    components: { JumbotronComps, HeadingContent, ContentImages, CarouselComps },
+    components: { JumbotronComps, HeadingContent, ContentImages, CarouselComps, ArticlesComps, FooterContent },
     data() {
       return {
         listServices: [
@@ -26,7 +28,7 @@
 </script>
 
 <template>
-    <JumbotronComps :carouselItem="carouselItem" />
+    <JumbotronComps />
     <!-- List Services -->
     <div class="container-fluid background-cream">
       <div class="container py-5 row mx-auto">
@@ -61,35 +63,13 @@
           </a>
       </template>
     </ContentImages>
-    <section class="mx-0 container mx-auto row py-5" id="link-other">
-        <div class="col-sm-4 link-icon">
-            <div class="d-flex align-items-center gap-3">
-                <img src="@/assets/images/first-aid-kit.png" alt="first-aid" />
-                <h3 class="align-self-center">Zona P3K</h3>
-            </div>
-            <p>Dapatkan berbagai informasi dan pengetahuan seputar pertolongan pertama pada kecelakaan</p>
-            <a href="#" class="link-to-readmore btn btn-primary rounded-pill">Read More <i class="bi bi-arrow-right"></i></a>
-        </div>
-        <div class="col-sm-4 link-icon">
-            <div class="d-flex align-items-center gap-3">
-                <img src="@/assets/images/baby.png" alt="first-aid" />
-                <h3 class="align-self-center">Ide Nama Bayi</h3>
-            </div>
-            <p>Dapatkan berbagai informasi dan pengetahuan seputar pertolongan pertama pada kecelakaan</p>
-            <a href="#" class="link-to-readmore btn btn-primary rounded-pill">Read More <i class="bi bi-arrow-right"></i></a>
-        </div>
-        <div class="col-sm-4 link-icon">
-            <div class="d-flex align-items-center gap-3">
-                <img src="@/assets/images/hospital.png" alt="hospital" />
-                <h3 class="align-self-center">Foodtraveler</h3>
-            </div>
-            <p>Dapatkan berbagai informasi dan pengetahuan seputar pertolongan pertama pada kecelakaan</p>
-            <a href="#" class="link-to-readmore btn btn-primary rounded-pill">Read More  <i class="bi bi-arrow-right"></i></a>
-        </div>
-    </section>
     <!-- carousel -->
     <CarouselComps />
     <!-- /carousel -->
+    <!-- articles -->
+    <ArticlesComps />
+    <!-- footer -->
+    <FooterContent />
 </template>
 
 <style scoped>

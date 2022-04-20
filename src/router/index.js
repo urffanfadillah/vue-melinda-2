@@ -17,6 +17,7 @@ import CareerDetail from '../views/CareerDetail.vue'
 import ArticlesView from '../views/ArticlesView.vue'
 import AuctionJobsView from '../views/AuctionJobsView.vue'
 import AuctionJobsDetailView from '../views/AuctionJobsDetailView.vue'
+import ServiceDetail from '../views/ServiceDetail.vue'
 
 const routes = [
   {
@@ -116,7 +117,12 @@ const routes = [
     path: '/auction-jobs-detail',
     name: 'auction-jobs-detail',
     component: AuctionJobsDetailView
-  },  
+  },
+  {
+    path: '/service-detail',
+    name: 'service-detail',
+    component: ServiceDetail
+  },
   { path: '/404', component: NotFoundView },  
   { path: '/:catchAll(.*)', redirect: '/404' },
 ]

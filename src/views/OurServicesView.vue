@@ -1,58 +1,139 @@
 <script>
     import FooterContent from "@/components/utils/FooterContent.vue"
-    import HeadingContent from "@/components/utils/HeadingContent.vue"
-    import HeroContent from "@/components/utils/HeroContent.vue"
     import ContentImages from "@/components/utils/ContentImages.vue"
-    import BgServices from "@/components/our-services/BgServices.vue"
+    import HeroText from "@/components/utils/HeroText.vue"
+    import HeadingContent from "@/components/utils/HeadingContent.vue"
     export default {
         components: {
-            FooterContent, HeadingContent, HeroContent, ContentImages, BgServices
+            FooterContent, HeroText, ContentImages, HeadingContent
         }
     }
 </script>
 
 <template>
-    <HeroContent isCream>
-        <div class="col-md-4" id="konten-hero">
-            <HeadingContent
-                subTitle="Melinda Hospital Services"
-                title="Our Great Services"
-                paragraph="Health is the main key to a woman's beauty and happiness. Melinda Hospital is sincerely committed to realizing every woman's dream to look beautiful, healthy and happy."
-                text_dark
-                blue_title                
-            />     
+    <HeroText 
+        subTitle="Our Great Services" 
+        title="Our Services" 
+        content="Various health facilities with state-of-the-art medical equipment and the latest. Making the quality of hospital services the best, safe, comfortable, friendly, effective, and efficient."
+        blueTheme
+    />
+    <div class="container mx-auto py-4">
+        <!-- input group -->
+        <div class="input-group mb-3">
+            <select class="form-select" aria-label="Default select example">
+                <option value="Katerisasi Jantung" selected>Katerisasi Jantung</option>
+                <option value="Two" selected>Two</option>
+                <option value="Three" selected>Three</option>
+            </select>
+            <input v-model="search" type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" placeholder="Cari disini...">
+            <button class="btn btn-outline-secondary py-3 btn-search" type="button" id="button-addon2">
+                Search Services
+            </button>
         </div>
-        <template #imagesSlot>
-            <img src="@/assets/images/services.png" class="d-none d-lg-block img-fluid" alt="heroimages" loading="lazy" id="hero-images-homepage">    
-        </template>        
-        <div class="col-md-8" id="konten-img">
-            <img src="@/assets/images/services.png" class="d-none d-md-block d-lg-none img-fluid" alt="heroimages" loading="lazy" id="hero-image"/>
-        </div>        
-    </HeroContent>    
-    <!-- Melinda Fertility Center -->
+    </div>
+    <!-- Service -->
     <ContentImages noBackground
-        subTitle="Melinda Hospital Mother Care"
-        title="Melinda Fertility Center"
-        paragraph="Melinda Fertility Center is part of the Melinda Hospital which deals with fertility, both male and female. Melinda Fertility Center is supported by very supportive facilities, friendly service and"
+        subTitle="RS Melinda 2 Services"
+        title="Disgestive Surgery"
+        paragraph="Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+        accusantium doloremque laudantium, totam rem aperiam, eaque  ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
     >
-        <img src="@/assets/images/services-img.png" alt="services" class="img-fluid" style="object-fit: cover;">    
+        <img src="https://dummyimage.com/800x500/000/fff" alt="services" class="img-fluid" style="object-fit: cover;">    
     </ContentImages>
-    <!-- Kids Medical Specialist -->
-    <ContentImages 
-        isBlues 
-        textWhite
+    <!-- Service -->
+    <ContentImages noBackground
         isSwaped
-        subTitle="Melinda Hospital Kids Care"
-        title="Kids Medical Specialist"
-        paragraph="Melinda Fertility Center is part of the Melinda Hospital which deals with fertility, both male and female. Melinda Fertility Center is supported by very supportive facilities, friendly service and"        
+        subTitle="RS Melinda 2 Services"
+        title="Urogynecology"
+        paragraph="Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+        accusantium doloremque laudantium, totam rem aperiam, eaque  ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
     >
-        <img src="@/assets/images/services-img-2.png" alt="services" class="img-fluid" style="object-fit: cover;">    
+        <img src="https://dummyimage.com/800x500/000/fff" alt="services" class="img-fluid" style="object-fit: cover;">    
     </ContentImages>
-    <BgServices />
+    <div class="container-fluid background-cream">
+      <div class="container py-5 row mx-auto">
+        <div class="col-sm-6">
+          <HeadingContent
+            blue_title
+            text_dark
+            subTitle="RS Melinda 2 Services" 
+            title="Emergency Unit"
+            paragraph="Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+            accusantium doloremque laudantium, totam rem aperiam, eaque  ipsa quae ab illo inventore veritatis et quasi architecto beatae  vitae dicta sunt explicabo." />
+        </div>
+        <div class="col-sm-6">
+          <HeadingContent
+            blue_title
+            text_dark
+            subTitle="RS Melinda 2 Services" 
+            title="Bedah Saraf"
+            paragraph="Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+            accusantium doloremque laudantium, totam rem aperiam, eaque  ipsa quae ab illo inventore veritatis et quasi architecto beatae  vitae dicta sunt explicabo." />
+        </div>
+      </div>
+    </div>
+    <!-- Service -->
+    <ContentImages noBackground        
+        subTitle="RS Melinda 2 Services"
+        title="Bedah Plastik & Rekonstruksi Estetik"
+        paragraph="Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+        accusantium doloremque laudantium, totam rem aperiam, eaque  ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+    >
+        <img src="https://dummyimage.com/800x500/000/fff" alt="services" class="img-fluid" style="object-fit: cover;">    
+    </ContentImages>
+    <!-- Service -->
+    <ContentImages noBackground
+        isSwaped        
+        subTitle="RS Melinda 2 Services"
+        title="Pediatric Surgery"
+        paragraph="Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+        accusantium doloremque laudantium, totam rem aperiam, eaque  ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+    >
+        <img src="https://dummyimage.com/800x500/000/fff" alt="services" class="img-fluid" style="object-fit: cover;">    
+    </ContentImages>
+    <!-- Service -->
+    <ContentImages noBackground        
+        subTitle="RS Melinda 2 Services"
+        title="Orthoepaedic & Traumatology Center"
+        paragraph="Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+        accusantium doloremque laudantium, totam rem aperiam, eaque  ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+    >
+        <img src="https://dummyimage.com/800x500/000/fff" alt="services" class="img-fluid" style="object-fit: cover;">    
+    </ContentImages>
+    <!-- Service -->
+    <ContentImages noBackground
+        isSwaped        
+        subTitle="RS Melinda 2 Services"
+        title="Bandung Urology Center"
+        paragraph="Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+        accusantium doloremque laudantium, totam rem aperiam, eaque  ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+    >
+        <img src="https://dummyimage.com/800x500/000/fff" alt="services" class="img-fluid" style="object-fit: cover;">    
+    </ContentImages>
+    <!-- Service -->
+    <ContentImages noBackground                
+        subTitle="RS Melinda 2 Services"
+        title="Oncology Surgery"
+        paragraph="Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+        accusantium doloremque laudantium, totam rem aperiam, eaque  ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+    >
+        <img src="https://dummyimage.com/800x500/000/fff" alt="services" class="img-fluid" style="object-fit: cover;">    
+    </ContentImages>
     <FooterContent/>    
 </template>
 
 <style scoped>
+    .btn-search {
+        background: #75C6EF;
+        border: transparent;
+        color: #ffffff;
+    }
+    .btn-search:hover {
+        opacity: 0.5;
+        background: #75C6EF;
+        border: transparent;
+        color: #ffffff;
+    }
     .konten {
         padding: 48px 10% 48px 10%;     
     }

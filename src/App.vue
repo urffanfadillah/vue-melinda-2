@@ -18,8 +18,10 @@
             <router-link class="nav-link" to="/">Home</router-link>
             <router-link class="nav-link" to="/our-services">Our Services</router-link>
             <router-link class="nav-link" to="/about">About</router-link>
+            <router-link class="nav-link" to="/articles">Articles</router-link>
             <router-link class="nav-link" to="/our-room">Our Room</router-link>
             <router-link class="nav-link" to="/gallery">Gallery</router-link>
+            <router-link class="nav-link" to="/doctors">Doctors</router-link>
             <router-link class="nav-link" to="/links">Links</router-link>                    
             <router-link to="/contact" class="btn btn-primary" href="/contact" role="button">Contact Us</router-link>                 
         </div>
@@ -67,9 +69,9 @@
   }
 
   .nav-link {
-      font-size: 14px !important;
+      font-size: 0.8rem !important;
       font-weight: 600;
-      margin: 0 20px 0 20px;
+      margin: 0 12px 0 12px;
       color: #575757 !important;        
   }
 

@@ -1,34 +1,40 @@
-<template>
-    <div class="d-flex justify-content-center" style="background-color: rgba(255, 255, 255, 0); padding-top: 14px; padding-bottom: 14px;">
-        <div class="d-flex gap-2">
-            <img src="@/assets/images/mouse-icon.png" alt="mouse-icon" class="mouse img-fluid">
-            <p class="my-auto">Scroll to bottom</p>
-        </div>
-    </div>    
+<template>    
     <ContentImages
-        isCream        
+        noBackground                
         subTitle="Melinda Hospital"
-        title="History of Melinda Hospital"
-        paragraph="In 2004 ago, dr. Susan Melinda, SpOG., a specialist in obstetrics and gynecology, established a hospital with the concept of a 5-star hotel and an art gallery that offers health facilities for women, especially mothers and children.
-        under the name Melinda Hospital. With an international standard, the hospital, which was established on July 23, 2004, is equipped with professional medical personnel. Health is the main key to a woman's beauty and happiness. We are sincerely committed to realizing every woman's dream to look beautiful, healthy and happy. said dr. Susan Melinda about her concern for women's needs.
+        title="History of RS Melinda 2"
+        paragraph="Rumah Sakit Melinda 2 terletak di pusat kota Bandung yang strategis, yaitu di Jl. Dr Cipto No.1 Bandung. Rumah Sakit Melinda 2 merupakan rumah sakit umum yang memiliki pelayanan yang unggul, baik di  dalam bidang medis maupun non-medis.
 
-        As a hospital devoted to women, Melinda Hospital was built so that all women can express their noble side, whether they are in a position as a woman or as a mother to their children. With a unique hospital concept, it will make patients and visitors feel comfortable. Melinda Hospital consists of five floors with a capacity of 33 beds, modern, energy efficient, minimalist architecture, spacious rooms and corridors. The Art and Craft Gallery which is installed along the corridor will also make the atmosphere warmer to welcome anyone who comes to Melinda Hospital."        
+        Profesionalisme yang tinggi, kerja keras, kedisiplinan, serta kerja sama tim yang baik mampu menghasilkan kesuksesan untuk Rumah Sakit Melinda 2 dalam memenuhi standar Internasional, baik dalam kesehatan maupun keselamatan pasien.
+
+        Rumah Sakit Melinda 2, hadir sejak Juni 2014. Rumah Sakit Melinda 2 memiliki bangunan lima lantai dan dua basement yang luas totalnya mencapai 3000 meter persegi.
+
+        Rumah Sakit Melinda 2 menyediakan berbagai fasilitas kesehatan dengan peralatan medis yang canggih dan terbaru, serta didukung oleh staf medis yang profesional untuk mengoperasikan peralatan tersebut. Selain itu, Rumah Sakit Melinda 2 memiliki lebih dari  90 dokter dan staff ahli serta 140 perawat yang selalu siaga untuk membantu pasien.
+
+        Sebagai rumah sakit yang menyediakan pelayanan yang profesional, Rumah Sakit Melinda 2 menganggap sumber daya manusia sebagai sumber daya yang utama dalam pelayanan. Oleh karena itu, Rumah Sakit Melinda 2 memiliki komitmen yang kuat untuk meningkatkan kemampuan dan profesionalisme sumber daya manusianya melalui pendidikan dan pelatihan rutin yang dilakukan secara terus menerus, baik di dalam maupun di luar negeri.
+
+"        
     >
         <img src="@/assets/images/group-about.png" alt="services" class="img-fluid" style="object-fit: cover;">
     </ContentImages>
+    <VisiMisi />   
     <ContentImages
-        subTitle="Melinda Hospital Gallery"
-        title="Our Vision and Mission"
-        paragraph="We respect human dignity. 'Patients who come we treat like family' without discriminating against ethnicity, religion, race, and class. Professional and quality service with a touch of love is our priority to grow, develop, and be independent."
-        textWhite
+        noBackground
+        isSwaped
+        subTitle="RS Melinda 2 Services"
+        title="Kebijakan Mutu"
+        paragraph="Rumah Sakit Melinda 2 berkomitmen memberikan pelayanan sesuai standar mutu
+        serta sistem keselamatan pasien dan manajemen risiko
+        sehingga memberikan rasa aman dan nyaman
+        sesuai harapan pengguna jasa maupun pekerja di lingkungan rumah sakit"        
     >
-        <img src="@/assets/images/images-about-1.png" alt="services" class="img-fluid" style="object-fit: cover;">
+        <img src="https://dummyimage.com/800x400/000/fff" alt="services" class="img-fluid" style="object-fit: cover;">
     </ContentImages>
     <div class="container mx-auto py-5">
         <HeadingContent 
             subTitle="Melinda Hospital"
             title="Our Filosofy"
-        />
+        />        
         <div class="row">
             <div class="col-sm-12">
                 <p>
@@ -55,18 +61,19 @@
             </div>
         </div>
     </div>
-    <AwardsContent />
+    <HospitalPlan />
     <FooterContent />
 </template>
 
 <script>
+    import VisiMisi from "@/components/about/VisiMisi.vue"
     import ContentImages from "@/components/utils/ContentImages.vue"
     import HeadingContent from "@/components/utils/HeadingContent.vue"
     import FooterContent from "@/components/utils/FooterContent.vue"
-    import AwardsContent from "@/components/about/AwardsContent.vue"
+    import HospitalPlan from "@/components/about/HospitalPlan.vue"
     export default {
         components: {
-            ContentImages, HeadingContent, FooterContent, AwardsContent
+            ContentImages, HeadingContent, FooterContent, VisiMisi, HospitalPlan
         }
     }   
 </script>

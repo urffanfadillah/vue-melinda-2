@@ -41,10 +41,10 @@
         </div>
     </section> -->
     <section class="mx-0 px-0 container-fluid row">
-        <div class="col-sm-12 bg-link-img-2 row mx-0">
-            <div class="col-sm-6">
+        <div class="col-sm-6 bg-link-img-2 row mx-0">
+            <div class="col-sm-12">
                 <HeadingContent 
-                    title="Melinda Hospital 2"
+                    title="Melinda Hospital"
                     subTitle="Group of Melinda Hospital"
                     paragraph="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. "
                     text_dark
@@ -53,14 +53,13 @@
                 </HeadingContent>
             </div>
         </div>
-        <div class="col-sm-12 row mx-0 px-0">
-            <div class="col-sm-6 bg-link-img-3"></div>
-            <div class="col-sm-6 content-melinda-3">
+        <div class="col-sm-6 bg-link-img-3 row mx-0 d-flex align-items-center">
+            <div class="col-sm-12">
                 <HeadingContent 
                     title="Melinda Hospital 3"
                     subTitle="Group of Melinda Hospital"
                     paragraph="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. "
-                    white_title
+                    text_dark
                 >
                     <a href="#" class="link-to-website btn btn-light text-white">Link To Website <i class="bi bi-arrow-right"></i></a>
                 </HeadingContent>

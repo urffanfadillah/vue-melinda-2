@@ -15,10 +15,11 @@
 </script>
 
 <template>
-    <HeroText 
-      subTitle="Melinda Hospital"
-      title="Melinda Hospital Founded in 2004"
-      content="Health is the main key to a woman's beauty and happiness. Melinda Hospital is sincerely committed to realizing every woman's dream to look beautiful, healthy and happy."
+    <HeroText
+      blueTheme
+      subTitle="RS Melinda 2"
+      title="About Us"
+      content="Various health facilities with state-of-the-art medical equipment and the latest. Making the quality of hospital services the best, safe, comfortable, friendly, effective, and efficient."
     />
     <AboutContent />
 </template>

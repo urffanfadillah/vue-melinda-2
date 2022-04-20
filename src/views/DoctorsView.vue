@@ -79,7 +79,9 @@
                 </option>                
             </select>
             <input v-model="search" type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" placeholder="Cari disini...">
-            <button class="btn btn-outline-secondary py-3" type="button" id="button-addon2">Search Doctor dan Schedule</button>        
+            <button class="btn btn-outline-secondary py-3 btn-search-doctor" type="button" id="button-addon2">
+                Search Doctor dan Schedule
+            </button>        
         </div>
         <!-- data dokter -->
         <div class="container-fluid px-0 gap-4">
@@ -103,7 +105,18 @@
     </div>
 </template>
 
-<style scoped>    
+<style scoped>
+    .btn-search-doctor {
+        background: #75C6EF;
+        border: transparent;
+        color: #ffffff;
+    }
+    .btn-search-doctor:hover {
+        opacity: 0.5;
+        background: #75C6EF;
+        border: transparent;
+        color: #ffffff;
+    }
     .card-body {
         background-color: #75C6EF
     }

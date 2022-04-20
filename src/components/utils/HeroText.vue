@@ -1,10 +1,14 @@
 <template>    
-  <section class="container d-flex justify-content-center flex-column links-hero gap-2 py-5">
-      <span class="content-sub-title text-center">{{subTitle}}</span>
-      <h1 class="content-title text-center">{{title}}</h1>
-      <p class="text-center links-desc">
-          {{content}}
-      </p>
+  <section class="d-block" :class="{'blue-theme':blueTheme}">
+      <div class="container d-flex justify-content-start flex-column links-hero gap-2 py-5">
+        <span class="content-sub-title text-start">{{subTitle}}</span>
+        <h1 class="content-title text-start" :class="{'text-white':blueTheme}" >
+            {{title}}
+        </h1>
+        <p class="text-start links-desc" :class="{'text-white':blueTheme}">
+            {{content}}
+        </p>
+      </div>
   </section>
 </template>
 
@@ -14,10 +18,13 @@
             title: String,
             subTitle: String,
             content: String,
+            blueTheme: Boolean
         }
     }
 </script>
 
-<style>
-
+<style scoped>
+    .blue-theme {
+        background-color: #1B4674;
+    }
 </style>
